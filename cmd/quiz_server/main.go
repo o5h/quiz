@@ -14,7 +14,7 @@ var (
 
 func main() {
 	log.Println("Quiz Server", "version:", version, "build date:", date)
-	err := db.Init(&db.Config{
+	database, err := db.Open(&db.Config{
 		URL:          "postgres://quiz_db_user:mysecretpassword@localhost:5432/quiz_db?sslmode=disable",
 		MaxOpenConns: 10,
 		MaxIdleConns: 5,
@@ -22,5 +22,5 @@ func main() {
 	if err != nil {
 		log.Fatal("Failed to initialize database:", err)
 	}
-	defer db.Close()
+	defer database.Close()
 }

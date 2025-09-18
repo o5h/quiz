@@ -10,8 +10,6 @@ go build ./cmd/quiz_server
 
 ## TODO
 
-* Create database
-  * User
 * User registration service
 * REST service to create/update/delete quiz
 
