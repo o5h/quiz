@@ -1,0 +1,15 @@
+{
+    "sqltools.connections": [
+        {
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "quiz_db",
+            "database": "quiz_db",
+            "username": "quiz_db_user",
+            "password": "mysecretpassword"
+        }
+    ]
+}
