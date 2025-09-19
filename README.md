@@ -5,7 +5,7 @@
 ### Build
 
 ```sh
-go build ./cmd/quiz_server
+go build ./quiz/cmd/quiz_server
 ```
 
 ## TODO
@@ -27,7 +27,7 @@ go build ./cmd/quiz_server
 docker pull postgres:13-trixie
 ```
 
-* Start
+* Start DB
 
 ```sh
 docker run --name quiz_db -e POSTGRES_USER=quiz_db_user -e POSTGRES_PASSWORD=mysecretpassword -e POSTGRES_DB=quiz_db -p 5432:5432 -d postgres
