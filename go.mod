@@ -18,6 +18,7 @@ require (
 )
 
 require (
+	github.com/golang-jwt/jwt/v5 v5.3.0
 	github.com/labstack/echo/v4 v4.13.4
 	github.com/lib/pq v1.10.9
 	github.com/mfridman/interpolate v0.0.2 // indirect

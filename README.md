@@ -34,3 +34,11 @@ docker run --name quiz_db -e POSTGRES_USER=quiz_db_user -e POSTGRES_PASSWORD=mys
 ```
 
 ### Echo?
+
+## Security
+
+Generate Self Signed Certificate for development
+
+```sh
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout server.key -out server.crt
+```
